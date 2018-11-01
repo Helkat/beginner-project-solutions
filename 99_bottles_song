@@ -1,0 +1,18 @@
+let bottles = 100;
+let lyrics = ''
+
+function countDown(){
+if (bottles > 1){
+do {
+  lyrics = bottles + " bottles of beer on the wall, " + bottles + " bottles of beer."
+  console.log(lyrics)
+  bottles = bottles - 1;
+  lyrics = "Take one down and pass it around, " + bottles + " bottles of beer on the wall.";
+  console.log(lyrics);
+} while (bottles < 100 && bottles >= 2);
+} 
+}
+countDown()
+if (bottles == 1){console.log(bottles + " bottle of beer on the wall, " + bottles + " bottle of beer. Take one down and pass it around, no more bottles of beer on the wall."); 
+(bottles--)}
+if (bottles == 0){console.log("No more bottles of beer on the wall, no more bottles of beer. Go to the store and buy some more, " + (bottles + 99) + " bottles of beer on the wall.")}
